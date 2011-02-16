@@ -1,0 +1,13 @@
+= Schema Validations
+
+DRY up your ActiveRecord validations based on schema information.
+
+  ActiveRecord::Base.send(:include, SchemaValidations)
+
+Use skip_schema_validations when you need to circumvent validation of specific attributes. This is particularly useful when a field that does not permit nulls will be populated after validation.
+
+  class User < ActiveRecord::Base
+    skip_schema_validations :crypted_password
+  end
+
+Much of this code was plagiarized from Simon Harris' Redhill on Rails work. I simply fixed it up for Rails 2.3.x, added test coverage and removed some of the more problematic validations for uniqueness, precision, scale etc. It's not quite as comprehensive but it's a useful foundation to build upon.
