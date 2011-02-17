@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name     = "robworley-schema-validations"
-  s.version  = "1.0.0"
+  s.version  = "1.0.1"
   s.date     = "2011-02-15"
   s.summary  = "DRY up your ActiveRecord validations based on schema information."
   s.email    = "robert.worley@gmail.com"
