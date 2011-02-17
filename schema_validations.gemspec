@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.summary  = "DRY up your ActiveRecord validations based on schema information."
   s.email    = "robert.worley@gmail.com"
   s.homepage = "http://github.com/robworley/schema-validations"
-  s.description = "Stripper is a Ruby on Rails plugin that removes leading and trailing blanks from attribute values in your models."
+  s.description = "Validate ActiveRecord models based your database schema."
   s.has_rdoc = true
   s.authors  = ["Rob Worley"]
   s.files    = ["MIT-LICENSE",
